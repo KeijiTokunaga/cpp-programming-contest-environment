@@ -76,5 +76,6 @@
 		"valarray": "cpp",
 		"variant": "cpp",
 		"scc": "cpp"
-	}
+	},
+	"cmake.configureOnOpen": true
 }
