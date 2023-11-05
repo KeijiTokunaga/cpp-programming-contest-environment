@@ -4,6 +4,7 @@ set -euo pipefail
 set -x
 
 npm install -g atcoder-cli
+pip3 install selenium
 pip3 install online-judge-tools
 pip3 install online-judge-template-generator
 
