@@ -12,17 +12,28 @@
                 {
                         "type": "cppbuild",
                         "label": "build code",
-                        "command": "/usr/bin/g++",
+                        "command": "/usr/bin/g++-12",
                         "args": [
-                                "-fdiagnostics-color=always",
-                                "-std=gnu++17",
+                                "-std=gnu++20",
+                                "-O2",
+                                "-DONLINE_JUDGE",
+                                "-DATCODER",
                                 "-g",
                                 "-Wall",
+                                "-Wextra",
+                                "-mtune=native",
+                                "-march=native",
                                 "${file}",
+                                "-fconstexpr-depth=2147483647",
+                                "-fconstexpr-loop-limit=2147483647",
+                                "-fconstexpr-ops-limit=2147483647",
                                 "-I",
                                 "~/ac-library",
                                 "-o",
-                                "${fileDirname}/a.out"
+                                "${fileDirname}/a.out",
+                                "-lgmpxx",
+                                "-lgmp",
+                                "-I/usr/include/eigen3"
                         ],
                         "options": {
                                 "cwd": "${fileDirname}"

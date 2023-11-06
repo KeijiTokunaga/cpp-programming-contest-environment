@@ -20,6 +20,6 @@ COPY .config/online-judge-tools /home/vscode/online-judge-tools
 # RUN su vscode -c "${VCPKG_ROOT}/vcpkg install <your-port-name-here>"
 
 # [Optional] Uncomment this section to install additional packages.
-# RUN apt-get update -q && export DEBIAN_FRONTEND=noninteractive \
-#    && apt-get -y install -q --no-install-recommends nodejs
+RUN sudo apt update -q && export DEBIAN_FRONTEND=noninteractive \
+    && sudo apt -y install g++-12
 
