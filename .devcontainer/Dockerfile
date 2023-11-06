@@ -21,5 +21,5 @@ COPY .config/online-judge-tools /home/vscode/online-judge-tools
 
 # [Optional] Uncomment this section to install additional packages.
 RUN sudo apt update -q && export DEBIAN_FRONTEND=noninteractive \
-    && sudo apt -y install g++-12
+    && sudo apt -y install g++-12 chromium-chromedriver
 
