@@ -15,7 +15,7 @@
                         "command": "/usr/bin/g++-12",
                         "args": [
                                 "-std=gnu++20",
-                                "-O2",
+                                "-O0",
                                 "-DONLINE_JUDGE",
                                 "-DATCODER",
                                 "-g",
